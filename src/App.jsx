@@ -7,6 +7,10 @@ import Login from "./pages/Login/Login";
 import Profile from "./pages/Profile/Profile";
 import ReportedLostPets from "./pages/ReportedLostPets/ReportedLostPets";
 import LostPets from "./pages/LostPets/LostPets";
+import ContactUs from "./pages/ContactUs/ContactUs";
+import ForgotPassword from "./pages/ForgotPassword/ForgotPassword";
+import Home from "./pages/Home/Home";
+import Homepage from "./pages/Homepage/Homepage";
 
 
 function App() {
@@ -24,6 +28,11 @@ function App() {
               <Route path="/profile" element={<Profile/>}></Route>
               <Route path="/reportedPets" element={<ReportedLostPets/>}></Route>
               <Route path="/lostPets" element={<LostPets/>}></Route>
+
+              <Route path="/contactus" element={<ContactUs />}></Route>
+              <Route path="/forgotpassword" element={<ForgotPassword />}></Route>
+              <Route path="/home" element={<Home />}></Route>
+              <Route path="/homepage" element={<Homepage />}></Route>
             </Routes>
           </BrowserRouter>
         </div>

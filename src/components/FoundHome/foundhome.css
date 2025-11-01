@@ -1,0 +1,13 @@
+.pet-component {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(254,254,254, 0.20);
+    border-radius: 20px;
+    width: 20%;
+}
+#single-view {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+}
