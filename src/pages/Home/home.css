@@ -1,0 +1,43 @@
+#home-container {
+    display:flex;
+    justify-content: flex-end;
+    text-align: right;
+    overflow: hidden;
+    position: relative;
+}
+.home-info {
+    margin-top: 3rem;
+    width: 50%;
+}
+.home-info > h1 {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 7.5rem;
+    text-align: right;
+}
+.home-info span img {
+    width: 7.5rem;
+    height: 7.5rem;
+    transform: rotate(15deg)
+}
+.home-info > p {
+    font-size: 1.5rem;
+}
+.home-info > button {
+    padding: .5rem 1rem .5rem 1rem;
+    font-size: 1.2rem;
+    background-color: #A60530;
+    color: #F2C879;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+#pet-pic {
+    width: 800px;
+    position: absolute;
+    bottom: 0;
+    left: 20;
+    margin: auto;
+}
