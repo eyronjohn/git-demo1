@@ -1,0 +1,73 @@
+.edit-container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.21);
+    outline: rgba(255, 255, 255, 0.60);
+    outline-width: 1px;
+    outline-style: solid;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 1.5rem;
+}
+#profile-pic {
+    width: 200px;
+}
+#edit-photo {
+    background-color: #A60530;
+    padding: .5rem 1.5rem .5rem 1.5rem;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+#edit-form > p {
+    color: #583523;
+    font-weight: 300;
+}
+#edit-form > input {
+    border: solid 1px #583523;
+    border-radius: 20px;
+    padding: .3rem .3rem .3rem 1rem;
+    width: 100%;
+}
+input:focus {
+    outline: none;
+}
+#edit-form {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    width: 30%;
+    gap: 10px;
+}
+#action-buttons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+#save-btn {
+    background-color: #F2C879;
+    padding: .5rem 3rem .5rem 3rem;
+    border-radius: 20px;
+    color: #A60530;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+#cancel-btn {
+    background-color: #A60530;
+    padding: .5rem 3rem .5rem 3rem;
+    border-radius: 20px;
+    color: #F2C879;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+

@@ -11,6 +11,7 @@ import ContactUs from "./pages/ContactUs/ContactUs";
 import ForgotPassword from "./pages/ForgotPassword/ForgotPassword";
 import Home from "./pages/Home/Home";
 import Homepage from "./pages/Homepage/Homepage";
+import EditProfile from "./pages/EditProfile/EditProfile";
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
               <Route path="/forgotpassword" element={<ForgotPassword />}></Route>
               <Route path="/home" element={<Home />}></Route>
               <Route path="/homepage" element={<Homepage />}></Route>
+              <Route path="/editprofile" element={<EditProfile />}></Route>
             </Routes>
           </BrowserRouter>
         </div>
