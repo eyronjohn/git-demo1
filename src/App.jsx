@@ -12,6 +12,10 @@ import ForgotPassword from "./pages/ForgotPassword/ForgotPassword";
 import Home from "./pages/Home/Home";
 import Homepage from "./pages/Homepage/Homepage";
 import EditProfile from "./pages/EditProfile/EditProfile";
+import ReportedFoundtPets from "./pages/ReportedFoundPets/ReportedFoundPets";
+import ReportedFoundPets from "./pages/ReportedFoundPets/ReportedFoundPets";
+import FoundPets from "./pages/FoundPets/FoundPets";
+import ReportLostPet from "./pages/ReportLostPet/ReportLostPet";
 
 
 function App() {
@@ -27,8 +31,12 @@ function App() {
               <Route path="/register" element={<Register/>}></Route>
               <Route path="/login" element={<Login/> }></Route>
               <Route path="/profile" element={<Profile/>}></Route>
-              <Route path="/reportedPets" element={<ReportedLostPets/>}></Route>
+              <Route path="/reportedLostPets" element={<ReportedLostPets/>}></Route>
               <Route path="/lostPets" element={<LostPets/>}></Route>
+              <Route path="/reportedFoundPets" element={<ReportedFoundPets/>}></Route>
+              <Route path="/foundPets" element={<FoundPets/>}></Route>
+
+              <Route path="/reportLostPet" element={<ReportLostPet/>}></Route>
 
               <Route path="/contactus" element={<ContactUs />}></Route>
               <Route path="/forgotpassword" element={<ForgotPassword />}></Route>
