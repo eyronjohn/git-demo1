@@ -16,6 +16,8 @@ import ReportedFoundtPets from "./pages/ReportedFoundPets/ReportedFoundPets";
 import ReportedFoundPets from "./pages/ReportedFoundPets/ReportedFoundPets";
 import FoundPets from "./pages/FoundPets/FoundPets";
 import ReportLostPet from "./pages/ReportLostPet/ReportLostPet";
+import LostSingleView from "./components/LostSingleView/LostSingleView";
+import FoundSingleView from "./components/FoundSingleView/FoundSingleView";
 
 
 function App() {
@@ -43,6 +45,8 @@ function App() {
               <Route path="/home" element={<Home />}></Route>
               <Route path="/homepage" element={<Homepage />}></Route>
               <Route path="/editprofile" element={<EditProfile />}></Route>
+              <Route path="/lostsingleview" element={<LostSingleView />}> </Route>
+              <Route path="/foundsingleview" element={<FoundSingleView />}> </Route>
             </Routes>
           </BrowserRouter>
         </div>
