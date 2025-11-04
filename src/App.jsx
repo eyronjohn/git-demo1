@@ -18,6 +18,10 @@ import ReportLostPet from "./pages/ReportLostPet/ReportLostPet";
 import LostSingleView from "./components/LostSingleView/LostSingleView";
 import FoundSingleView from "./components/FoundSingleView/FoundSingleView";
 import circles from './assets/Circles.png'
+import ReportFoundPet from "./pages/ReportFoundPet/ReportFoundPet";
+import EditLostPet from "./pages/EditLostPet/EditLostPet";
+import EditFoundPet from "./pages/EditFoundPet/EditFoundPet";
+
 
 function App() {
   return (
@@ -44,6 +48,12 @@ function App() {
               <Route path="/foundPets" element={<FoundPets />}></Route>
 
               <Route path="/reportLostPet" element={<ReportLostPet />}></Route>
+              <Route path="/editLostPet" element={<EditLostPet />}></Route>
+              
+              <Route path="/reportFoundPet" element={<ReportFoundPet />}></Route>
+              <Route path="/editFoundPet" element={<EditFoundPet />}></Route>
+
+             
 
               <Route path="/contactus" element={<ContactUs />}></Route>
               <Route path="/forgotpassword" element={<ForgotPassword />}></Route>
