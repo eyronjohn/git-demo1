@@ -12,33 +12,38 @@ import ForgotPassword from "./pages/ForgotPassword/ForgotPassword";
 import Home from "./pages/Home/Home";
 import Homepage from "./pages/Homepage/Homepage";
 import EditProfile from "./pages/EditProfile/EditProfile";
-import ReportedFoundtPets from "./pages/ReportedFoundPets/ReportedFoundPets";
 import ReportedFoundPets from "./pages/ReportedFoundPets/ReportedFoundPets";
 import FoundPets from "./pages/FoundPets/FoundPets";
 import ReportLostPet from "./pages/ReportLostPet/ReportLostPet";
 import LostSingleView from "./components/LostSingleView/LostSingleView";
 import FoundSingleView from "./components/FoundSingleView/FoundSingleView";
-
+import circles from './assets/Circles.png'
 
 function App() {
   return (
     <>
-      <div className="w-full min-h-screen bg-[#F2C879] bg-[linear-gradient(20deg,rgba(242,200,121,0.2)_0%,rgba(166,5,48,0.2)_60%)] bg-blend-normal">
+      <div className="w-full min-h-screen bg-[#F2C879] bg-[linear-gradient(20deg,rgba(242,200,121,0.2)_0%,rgba(166,5,48,0.2)_60%)] bg-blend-normal relative overflow-hidden">
+        <img
+          src={circles}
+          alt="Background pattern"
+          className="absolute inset-0 w-full h-full object-cover opacity-50 z-0 pointer-events-none"
+          style={{ objectPosition: "top right" }}
+        />
         <div className="w-[90%] mx-auto py-8">
           <BrowserRouter>
             <Navbar2 />
             <Routes>
-              <Route path="/" element={<AboutUs />}></Route>
+              <Route path="/" element={<Home />}></Route>
               <Route path="/about" element={<AboutUs />}></Route>
-              <Route path="/register" element={<Register/>}></Route>
-              <Route path="/login" element={<Login/> }></Route>
-              <Route path="/profile" element={<Profile/>}></Route>
-              <Route path="/reportedLostPets" element={<ReportedLostPets/>}></Route>
-              <Route path="/lostPets" element={<LostPets/>}></Route>
-              <Route path="/reportedFoundPets" element={<ReportedFoundPets/>}></Route>
-              <Route path="/foundPets" element={<FoundPets/>}></Route>
+              <Route path="/register" element={<Register />}></Route>
+              <Route path="/login" element={<Login />}></Route>
+              <Route path="/profile" element={<Profile />}></Route>
+              <Route path="/reportedLostPets" element={<ReportedLostPets />}></Route>
+              <Route path="/lostPets" element={<LostPets />}></Route>
+              <Route path="/reportedFoundPets" element={<ReportedFoundPets />}></Route>
+              <Route path="/foundPets" element={<FoundPets />}></Route>
 
-              <Route path="/reportLostPet" element={<ReportLostPet/>}></Route>
+              <Route path="/reportLostPet" element={<ReportLostPet />}></Route>
 
               <Route path="/contactus" element={<ContactUs />}></Route>
               <Route path="/forgotpassword" element={<ForgotPassword />}></Route>

@@ -21,7 +21,7 @@ function Profile() {
                         <p>Total of Reported Found Pets:</p>
                     </div>
                     <div>
-                        <button className="px-12 py-2 text-xl font-bold text-[#A60530] border border-white bg-[rgba(244,244,244,0.12)] rounded-full shadow-lg cursor-pointer hover:bg-[rgba(204,204,204,0.12)]">Edit Profile</button>
+                        <Link to="/editprofile" className="px-12 py-2 text-xl font-bold text-[#A60530] border border-white bg-[rgba(244,244,244,0.12)] rounded-full shadow-lg cursor-pointer hover:bg-[rgba(204,204,204,0.12)]">Edit Profile</Link>
                     </div>
                 </div>
             </div>

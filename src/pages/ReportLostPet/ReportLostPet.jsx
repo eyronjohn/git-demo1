@@ -17,7 +17,7 @@ function ReportLostPet() {
                         </div>
                         <p className='font-semibold'>Reuniting hearts, one paw at a time.</p>
                     </div>
-                    <div className="w-1/5 h-34 flex justify-center items-center">
+                    <div className="w-1/5 h-34 flex justify-center items-center z-100">
                         <img src={happyDogCat} alt="Happy dog & cat" className="w-full h-full" />
                     </div>
                 </div>

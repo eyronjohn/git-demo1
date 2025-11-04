@@ -1,15 +1,16 @@
 import { Link } from "react-router";
+import pawPrint from '../../assets/paw-print 4.png'
 
 function Login() {
     return (
         <div className="flex justify-center items-center w-full h-auto mt-8">
-            <div className="flex flex-col items-center gap-8 p-8 w-[70%] bg-[rgba(255,255,255,0.21)] rounded-3xl shadow-lg">
-                <i className="fa-solid fa-paw text-2xl"></i>
+            <div className="flex flex-col items-center gap-8 p-8 w-[50%] bg-[rgba(255,255,255,0.21)] rounded-3xl shadow-lg">
                 <div className="flex flex-col items-center">
-                    <h1 className="text-5xl font-semibold">Welcome back to</h1>
+                    <img src={pawPrint} alt="Paw print logo" className="w-16 h-16" />
+                    <p className="text-5xl text-black font-semibold">Welcome back to</p>
                     <h1 className="text-5xl font-bold text-[#A60530]">SafePaws!</h1>
                 </div>
-                <div className="flex flex-col gap-2 w-[60%]">
+                <div className="flex flex-col gap-4 w-[60%]">
                     <p className="text-lg text-center">To help all our pet owners in this community, even you, by joining us.</p>
                     <div>
                         <p>Username</p>
@@ -21,7 +22,7 @@ function Login() {
                     </div>
                     <button className="text-2xl font-semibold bg-[#A60530] text-[#F2C879] py-2 rounded-full uppercase cursor-pointer">Sign Up</button>
                     <div className="flex justify-center">
-                        <Link to="/" className="cursor-pointer hover:text-[#A60530]">Forgot Password</Link>
+                        <Link to="/forgotpassword" className="cursor-pointer hover:text-[#A60530]">Forgot Password</Link>
                     </div>
                     <div className="flex justify-center gap-1">
                         <p>Don't have an account yet?</p>
