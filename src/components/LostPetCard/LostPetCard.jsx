@@ -12,7 +12,7 @@ function LostPetCard() {
                     <p className="font-semibold">Breed</p>
                 </div>
                 <div className="flex items-center gap-2">
-                    <Link className="text-sm cursor-pointer hover:text-[#A60530]">Futher details <i class="fa-solid fa-arrow-right"></i></Link>
+                    <Link className="text-sm cursor-pointer hover:text-[#A60530]">Futher details <i className="fa-solid fa-arrow-right"></i></Link>
                 </div>
             </div>
         </div>
