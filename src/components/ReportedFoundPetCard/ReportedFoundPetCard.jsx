@@ -1,6 +1,6 @@
 function ReportedFoundPetCard() {
     return (
-        <div className="w-full sm:w-56 md:w-60 h-auto flex justify-center py-2 bg-[rgba(255,255,255,0.21)] rounded-xl shadow-md">
+        <div className="w-full sm:w-56 md:w-60 h-auto flex justify-center py-2 bg-[rgba(255,255,255,0.21)] border border-white rounded-xl shadow-md">
             <div className="flex flex-col gap-6 items-center">
                 <div className="w-24 h-24">
                     <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="" className="w-full h-full" />
