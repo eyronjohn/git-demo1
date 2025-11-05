@@ -21,11 +21,11 @@ function EditFoundPet() {
                         <img src={happyDogCat} alt="Happy dog & cat" className="w-full h-full" />
                     </div>
                 </div>
-                <div className="w-[80%] h-auto flex justify-center items-center">
-                    <div className="flex flex-col justify-center gap-6">
-                        <p className='text-4xl font-bold text-[#A60530] text-center'>Edit your Reported Found Pet</p>
+                <div className="w-full h-auto flex justify-center items-center">
+                    <div className="flex flex-col justify-center gap-6 text-center">
+                        <p className='text-3xl sm:text-4xl font-bold text-[#A60530] text-center'>Edit your Reported Found Pet</p>
                         <div className='px-8 py-2 bg-[rgba(255,255,255,0.21)] p-4 rounded-full border-white border'>
-                            <p className='text-lg text-[#80543D]'>Let’s help our fellow pet owners in our community. It would mean a lot to them!</p>
+                            <p className='text-md sm:text-lg text-[#80543D]'>Let’s help our fellow pet owners in our community. It would mean a lot to them!</p>
                         </div>
                     </div>
                 </div>
