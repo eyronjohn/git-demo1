@@ -53,3 +53,19 @@
     border-radius: 20px;
     padding: 20px;
 }
+#button-pets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 1.5rem;
+}
+#button-pets button {
+    background-color: rgba(254, 254, 254, 0.2);
+    color:#A60530;
+    font-weight: 600;
+    padding: 0.6rem 1.7rem 0.6rem 1.7rem;
+    border-radius: 20px;
+    border: rgba(254, 254, 254, 0.3) solid 1px;
+    cursor: pointer;
+}

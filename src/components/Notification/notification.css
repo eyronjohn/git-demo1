@@ -1,6 +1,9 @@
 .notif-component {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 20px
+    justify-content: flex-start;
+    gap: 20px;
+}
+.icon-notif {
+    width: 20%;
 }
