@@ -1,7 +1,10 @@
 import { Link } from "react-router";
 import pawPrint from '../../assets/paw-print 4.png'
+import { useState } from "react";
 
 function Register() {
+
+     const [email, setEmail] = useState();
     return (
         <div className="flex justify-center items-center w-full h-auto mt-8">
             <div className="w-full sm:w-[80%] md:w-[60%] lg:w-[50%] max-w-2xl flex flex-col items-center gap-8 p-8 bg-[rgba(255,255,255,0.21)] rounded-3xl shadow-2xl">
