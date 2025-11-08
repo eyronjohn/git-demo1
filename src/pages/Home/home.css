@@ -9,20 +9,19 @@
     margin-top: 3rem;
     width: 50%;
 }
-#safepaws {
+.home-info > h1 {
     display: flex;
     justify-content: flex-end;
+    font-size: 7.5rem;
+    text-align: right;
 }
-#safepaws > img {
-    width: 7rem;
-    height: 7rem;
-    transform: rotate(20deg)
+.home-info span img {
+    width: 7.5rem;
+    height: 7.5rem;
+    transform: rotate(15deg)
 }
-#safepaws > h1 {
-    font-size: 7rem;
-}
-#home-container p {
-    font-size: 1.2rem;
+.home-info > p {
+    font-size: 1.5rem;
 }
 .home-info > button {
     padding: .5rem 1rem .5rem 1rem;
@@ -44,28 +43,34 @@
 }
 
 @media (max-width: 1024px) {
-    #safepaws > img {
-        width: 7rem;
-        height: 7rem;
-        transform: rotate(20deg)
+    .home-info > h1 {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 5rem;
+        text-align: right;
     }
-    #safepaws > h1 {
-        font-size: 7rem;
+    .home-info span img {
+        width: 5rem;
+        height: 5rem;
+        transform: rotate(15deg)
     }
-    .home-container p {
+    .home-info > p {
         font-size: 1.2rem;
     }
   }
 @media (max-width: 768px) {
-    #safepaws > img {
-        width: 5rem;
-        height: 5rem;
-        transform: rotate(20deg)
+    .home-info > h1 {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 4rem;
+        text-align: right;
     }
-    #safepaws > h1 {
-        font-size: 5rem;
+    .home-info span img {
+        width: 4rem;
+        height: 4rem;
+        transform: rotate(15deg)
     }
-    .home-container p {
+    .home-info > p {
         font-size: 1.2rem;
     }
     #pet-pic {
@@ -77,15 +82,18 @@
     }
   }
  @media (max-width: 640px) {
-    #safepaws > img {
-        width: 5rem;
-        height: 5rem;
-        transform: rotate(20deg)
+    .home-info > h1 {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 3.5rem;
+        text-align: right;
     }
-    #safepaws > h1 {
-        font-size: 5rem;
+    .home-info span img {
+        width: 3.5rem;
+        height: 3.5rem;
+        transform: rotate(15deg)
     }
-    .home-container p {
+    .home-info > p {
         font-size: 1rem;
     }
     #pet-pic {
@@ -97,15 +105,18 @@
     }
 }
 @media (min-width: 480px ) and (max-width: 639px) {
-    #safepaws > img {
-        width: 4rem;
-        height: 4rem;
-        transform: rotate(20deg)
+    .home-info > h1 {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 2.5rem;
+        text-align: right;
     }
-    #safepaws > h1 {
-        font-size: 4rem;
+    .home-info span img {
+        width: 2rem;
+        height: 2rem;
+        transform: rotate(10deg)
     }
-    .home-container p {
+    .home-info > p {
         font-size: 1rem;
     }
     #pet-pic {
