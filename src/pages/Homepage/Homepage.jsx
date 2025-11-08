@@ -53,11 +53,9 @@ export default function Homepage() {
                         <Announcement />
                         <Announcement />
                 </div>
+
+
             </div>
-            </div>
-            <div id='button-pets'>
-                <button id='reported-pets'> Your Reported Pets </button>
-                <button id='found-pets'> Your Found Pets </button>
             </div>
         </>
     )

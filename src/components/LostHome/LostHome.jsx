@@ -1,5 +1,4 @@
 import './losthome.css'
-import { Link } from 'react-router'
 
 export default function LostHome() {
     return (
@@ -9,9 +8,7 @@ export default function LostHome() {
                 <p>Pet Name</p>
                 <p>Species</p>
                 <p>Breed</p>
-                <Link to = '/lostsingleview'>
                 <p id='single-view'>Further Details</p>
-                </Link>
             </div>
         </>
     )
