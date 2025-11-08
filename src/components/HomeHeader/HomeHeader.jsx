@@ -5,7 +5,7 @@ export default function HomeHeader() {
         <>
             <div className='home-header'>
                 <div id='text-header'>
-                    <h1> SafeP<span><img src='/src/assets/paw-print 4.png' alt='paw' id='paw-img'/></span>ws</h1>
+                    <h1> SafeP<span><img src='/src/assets/paw-print 4.png' alt='paw'/></span>ws</h1>
                     <p>Reuniting hearts, one paw at a time.</p>
                 </div>
                 <div id='img-header'>

@@ -8,32 +8,26 @@
 }
 .home-header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin: auto;
     background-color: rgba(254,254,254, 0.20);
-    width: 100%;
+    width: 90%;
     border-radius: 30px;
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 1.5rem;
     border:rgba(254, 254, 254, .21) 1px solid;
 }
-#text {
+#text-header > h1 {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-bottom: 1.5rem;
-}
-#text > h1 {
     font-size: 4rem;
-    text-align: left;
 }
-#text > p {
+#text-header > p {
     font-size: 1.1rem;
 }
-#img-header {
-    width: 200px;
+.home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 #lost-pet {
     display: flex;
@@ -42,11 +36,10 @@
     justify-content: center;
     background-color: rgba(254, 254, 254, .21);
     border:rgba(254, 254, 254, .21) 1px solid;
-    width: 50%;
+    width: 30%;
     margin: auto;
     margin-top: 1.5rem;
     border-radius: 20px;
-    padding: 2rem;
 }
 #lost-pet > img {
     width: 200px;
@@ -93,32 +86,4 @@
     margin-top: 1.3rem;
     border-radius: 20px;
     cursor: pointer;
-}
-@media (max-width: 1024px) {
-    #lost-pet {
-        width: 80%;
-    }
-}
-@media (max-width: 640px) {
-    #text > h1 {
-        font-size: 3rem;
-        text-align: center;
-    }
-    #text > p {
-        font-size: .9rem;
-    }
-    #img-header {
-        width: 150px;
-    }
-    #deets-left {
-        font-size: 1rem;
-        word-break: break-all;
-    }
-    #deets-right {
-        font-size: 1rem;
-        word-break: break-all;
-    }
-    #extra-deets {
-        word-break: break-all;
-    }
 }
