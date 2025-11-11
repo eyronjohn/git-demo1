@@ -23,8 +23,8 @@
 .home-info > p {
     font-size: 1.5rem;
 }
-.home-info > button {
-    padding: .5rem 1rem .5rem 1rem;
+#register {
+    padding: .5rem 1rem;
     font-size: 1.2rem;
     background-color: #A60530;
     color: #F2C879;
@@ -33,6 +33,13 @@
     border-radius: 20px;
     cursor: pointer;
     margin-top: 1.5rem;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#register:hover {
+    background-color: #8e0428;
 }
 #pet-pic {
     width: 800px;

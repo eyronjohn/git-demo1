@@ -1,5 +1,6 @@
 import Header from "../../components/Header/Header";
 import FoundPetCard from "../../components/FoundPetCard/FoundPetCard";
+import { Link } from "react-router";
 
 function FoundPets() {
     return (
@@ -20,7 +21,10 @@ function FoundPets() {
                     </div>
                 </div>
             </div>
-            <button className="px-10 py-4 text-xl font-bold text-[#A60530] border border-white bg-[rgba(244,244,244,0.12)] rounded-full shadow-lg cursor-pointer hover:bg-[rgba(204,204,204,0.12)] z-100">Report a Lost Pet</button>
+            <Link to="/reportedFoundPets"
+            className="px-10 py-4 text-xl font-bold text-[#A60530] border border-white bg-[rgba(244,244,244,0.12)] rounded-full shadow-lg cursor-pointer hover:bg-[rgba(204,204,204,0.12)] z-100">
+            Report a Found Pet
+            </Link>
         </div>
     )
 }

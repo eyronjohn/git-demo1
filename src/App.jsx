@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router";
 import Navbar from "./components/Navbar/Navbar";
 import Navbar2 from "./components/Navbar2/Navbar2";
 import AboutUs from "./pages/AboutUs/AboutUs";
@@ -21,9 +21,25 @@ import circles from './assets/Circles.png'
 import ReportFoundPet from "./pages/ReportFoundPet/ReportFoundPet";
 import EditLostPet from "./pages/EditLostPet/EditLostPet";
 import EditFoundPet from "./pages/EditFoundPet/EditFoundPet";
+import { useEffect, useState } from "react";
+import { onAuthStateChanged } from "firebase/auth";
+import { auth, db } from "./firebase-config";
 
 
 function App() {
+
+    const [user, setUser] = useState();
+    const [loading, setLoading] = useState(true);
+
+    useEffect(()=>{
+      onAuthStateChanged(auth,(u)=>{
+        setUser(u);
+        setLoading(false);
+      })
+    },[user])
+
+    if(loading) return(<></>)
+
   return (
     <>
       <div className="w-full min-h-screen bg-[#F2C879] bg-[linear-gradient(20deg,rgba(242,200,121,0.2)_0%,rgba(166,5,48,0.2)_60%)] bg-blend-normal relative overflow-hidden">
@@ -37,31 +53,40 @@ function App() {
           <BrowserRouter>
             <Navbar2 />
             <Routes>
-              <Route path="/" element={<Home />}></Route>
-              <Route path="/about" element={<AboutUs />}></Route>
-              <Route path="/register" element={<Register />}></Route>
-              <Route path="/login" element={<Login />}></Route>
-              <Route path="/profile" element={<Profile />}></Route>
-              <Route path="/reportedLostPets" element={<ReportedLostPets />}></Route>
-              <Route path="/lostPets" element={<LostPets />}></Route>
-              <Route path="/reportedFoundPets" element={<ReportedFoundPets />}></Route>
-              <Route path="/foundPets" element={<FoundPets />}></Route>
+              {/* public routes */}
+              {!user &&
+              <>
+              <Route path="/" element={<Home />}/>
+              <Route path="/home" element={<Home />}/>
+              <Route path="/about" element={<AboutUs />}/>
+              <Route path="/register" element={<Register />}/>
+              <Route path="/login" element={<Login />}/>
+              <Route path="/contactus" element={<ContactUs />}/>
+              <Route path="/forgotpassword" element={<ForgotPassword />}/>
+              <Route path="*" element={<Navigate to="/home"/>}/>
+              </>
+              }
 
-              <Route path="/reportLostPet" element={<ReportLostPet />}></Route>
-              <Route path="/editLostPet" element={<EditLostPet />}></Route>
-              
-              <Route path="/reportFoundPet" element={<ReportFoundPet />}></Route>
-              <Route path="/editFoundPet" element={<EditFoundPet />}></Route>
-
-             
-
-              <Route path="/contactus" element={<ContactUs />}></Route>
-              <Route path="/forgotpassword" element={<ForgotPassword />}></Route>
-              <Route path="/home" element={<Home />}></Route>
-              <Route path="/homepage" element={<Homepage />}></Route>
-              <Route path="/editprofile" element={<EditProfile />}></Route>
-              <Route path="/lostsingleview" element={<LostSingleView />}> </Route>
-              <Route path="/foundsingleview" element={<FoundSingleView />}> </Route>
+              {user &&
+              <>
+              <Route path="/contactus" element={<ContactUs />}/>
+              <Route path="/about" element={<AboutUs />}/>
+              <Route path="/profile" element={<Profile />}/>
+              <Route path="/reportedLostPets" element={<ReportedLostPets />}/>
+              <Route path="/reportLostPet" element={<ReportLostPet/>}/>
+              <Route path="/lostPets" element={<LostPets />}/>
+              <Route path="/reportedFoundPets" element={<ReportedFoundPets />}/>
+              <Route path="/foundPets" element={<FoundPets />}/>
+              <Route path="/editLostPet" element={<EditLostPet />}/>
+              <Route path="/reportFoundPet" element={<ReportFoundPet />}/>
+              <Route path="/editFoundPet" element={<EditFoundPet />}/>
+              <Route path="/homepage" element={<Homepage />}/>
+              <Route path="/editprofile" element={<EditProfile />}/>
+              <Route path="/lostsingleview" element={<LostSingleView />}/> 
+              <Route path="/foundsingleview" element={<FoundSingleView />}/> 
+              <Route path="*" element={<Navigate to="/homepage"/>}/>
+              </>
+              }
             </Routes>
           </BrowserRouter>
         </div>

@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import Header from "../../components/Header/Header";
 import LostPetCard from "../../components/LostPetCard/LostPetCard";
 
@@ -20,7 +21,10 @@ function LostPets() {
                     </div>
                 </div>
             </div>
-            <button className="px-10 py-4 text-xl font-bold text-[#A60530] border border-white bg-[rgba(244,244,244,0.12)] rounded-full shadow-lg cursor-pointer hover:bg-[rgba(204,204,204,0.12)] z-100">Report a Lost Pet</button>
+            <Link to="/reportedLostPets"
+            className="px-10 py-4 text-xl font-bold text-[#A60530] border border-white bg-[rgba(244,244,244,0.12)] rounded-full shadow-lg cursor-pointer hover:bg-[rgba(204,204,204,0.12)] z-100">
+            Report a Lost Pet
+            </Link>
         </div>
     )
 }
