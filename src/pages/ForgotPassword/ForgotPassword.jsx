@@ -1,3 +1,4 @@
+import { Link } from 'react-router'
 import './forgotpassword.css'
 
 export default function ForgotPassword() {
@@ -10,7 +11,7 @@ export default function ForgotPassword() {
                     <input type='text' id='email' placeholder='Enter your email'/>
                 </div>
                 <button id="reset">Reset Password</button>
-                <button id="cancel">Cancel</button>
+                <Link to={'/login'} id='back-to-login'> Back to Login </Link>
             </div>
         </>
     )
