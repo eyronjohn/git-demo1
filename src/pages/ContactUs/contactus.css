@@ -52,7 +52,7 @@ h2 {
     text-align: center;
 }
 
-img {
+.contact-container > img {
     margin-top: 1.3rem;
     margin-bottom: 1.3rem;
     max-width: 50%;

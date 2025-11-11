@@ -63,14 +63,13 @@
 #extra-deets {
     margin-top: 1.4rem;
 }
-#report-click {
+#found-click {
     background-color: #A60530;
     color: #F2C879;
     margin-top: 1.3rem;
     border-radius: 20px;
     padding: .5rem .8rem .5rem .8rem;
     font-weight: 600;
-    cursor: pointer;
 }
 #warning > span {
     color: #583523;

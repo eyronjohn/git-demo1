@@ -35,7 +35,7 @@ export default function FoundSingleView() {
                         <p>Email Address: </p>
                     </div>
                 </div>
-                <button id='report-click'>FOUND</button>
+                <button id='found-click'>FOUND</button>
                 <p id='warning'>Each reported found pets will be labeled as <span>‘FOUND’</span>.</p>
             </div>
             <button id='back-found-single'> BACK </button>

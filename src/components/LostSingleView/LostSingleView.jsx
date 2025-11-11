@@ -19,7 +19,7 @@ export default function LostSingleView() {
                         <p>Pet Name: </p>
                         <p>Species: </p>
                         <p>Breed: </p>
-                        <p>Color/Markings:ssssssssssss </p>
+                        <p>Color/Markings: </p>
                         <p>Gender: </p>
                         <p>Age/Approximate Age: </p>
 
@@ -31,7 +31,7 @@ export default function LostSingleView() {
                     </div>
                     <div id='deets-right'>
                         <p>Owner: </p>
-                        <p>Contact Number:sssssssssssssss </p>
+                        <p>Contact Number: </p>
                         <p>Email Address: </p>
                     </div>
                 </div>

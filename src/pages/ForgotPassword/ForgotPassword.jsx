@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { Link } from 'react-router'
 import './forgotpassword.css'
 import { useNavigate } from 'react-router';
 
@@ -30,7 +30,7 @@ export default function ForgotPassword() {
     return (
         <>
             <div className='forgot-container'>
-                <p id='forgot-pass'> Forgot your Password? </p>
+                <h1> Forgot your Password? </h1>
                 <div id='forgot-input'>
                     <p> Email </p>
                     <input type='text' id='email' placeholder='Enter your email'onInput={(evt)=>verifyEmail(evt)}/>
