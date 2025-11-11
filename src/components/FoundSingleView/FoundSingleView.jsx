@@ -5,13 +5,11 @@ export default function FoundSingleView() {
         <>
         <div id='found-single-container'>
             <div className='home-header'>
-                <div id='text-header'>
+                <div id='text'>
                     <h1> Found Pets </h1>
                     <p>Here you can see all the pets that have been reported missing. Check the list to see if you’ve spotted any of them, or learn more about each pet by tapping on their details.</p>
                 </div>
-                <div id='img-header'>
-                    <img src='/src/assets/—Pngtree—happy dog and cat with_15913340 2.png' alt='homepage-illustration'/>
-                </div>
+                    <img src='/src/assets/—Pngtree—happy dog and cat with_15913340 2.png' alt='homepage-illustration' id='img-header'/>
             </div>
 
             <div id='found-pet'>

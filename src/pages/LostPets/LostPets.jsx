@@ -5,7 +5,7 @@ import LostPetCard from "../../components/LostPetCard/LostPetCard";
 function LostPets() {
     return (
         <div className="flex flex-col gap-4 justify-center items-center w-full h-auto mt-8">
-            <div className="flex flex-col items-center gap-8 p-8 w-full bg-[rgba(255,255,255,0.21)] rounded-3xl shadow-lg z-100">
+            <div className="flex flex-col items-center gap-8 p-8 w-full bg-[rgba(255,255,255,0.21)] border border-white rounded-3xl shadow-lg z-100">
                 <Header title={"Lost Pets"} subtitle={"Here you can see all the pets that have been reported missing. Check the list to see if you’ve spotted any of them, or learn more about each pet by tapping on their details. "}/>
                 <div className="w-full sm:w-[90%] h-auto flex justify-center items-center ">
                     <div className="flex flex-wrap justify-center gap-6">
