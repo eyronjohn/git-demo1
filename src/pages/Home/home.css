@@ -6,12 +6,14 @@
     position: relative;
 }
 .home-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     margin-top: 3rem;
     width: 50%;
 }
 #safepaws {
     display: flex;
-    justify-content: flex-end;
 }
 #safepaws > img {
     width: 7rem;
@@ -24,7 +26,7 @@
 #home-container p {
     font-size: 1.2rem;
 }
-.home-info > button {
+.home-info > a button {
     padding: .5rem 1rem .5rem 1rem;
     font-size: 1.2rem;
     background-color: #A60530;
@@ -45,12 +47,12 @@
 
 @media (max-width: 1024px) {
     #safepaws > img {
-        width: 7rem;
-        height: 7rem;
+        width: 6rem;
+        height: 6rem;
         transform: rotate(20deg)
     }
     #safepaws > h1 {
-        font-size: 7rem;
+        font-size: 6rem;
     }
     .home-container p {
         font-size: 1.2rem;

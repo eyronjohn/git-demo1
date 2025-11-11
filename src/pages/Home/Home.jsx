@@ -1,4 +1,5 @@
 import './home.css'
+import {Link} from 'react-router'
 
 export default function Home() {
     return (
@@ -12,7 +13,9 @@ export default function Home() {
                     <h1>ws</h1>
                 </div>
                 <p> Reuniting hearts, one paw at a time. To help all our pet owners in this community, even you, by joining us. </p>
+                <Link to={'/register'}>
                 <button id='register'>REGISTER NOW!</button>
+                </Link>
             </div>
         </div>
         
