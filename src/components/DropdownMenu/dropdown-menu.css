@@ -1,14 +1,16 @@
-.dropdownMenu{
+.dropdownMenu {
     position: absolute;
-    top: 4.5rem;
-    left: 28.8rem;
+    top: 100%;        
+    left: 50%;            
+    transform: translateX(-50%); 
     width: 150px;
     padding: 15px;
     border-radius: 8px;
     border: 1px solid gray;
     background-color: white;
-    /* z-index: 100; */
+    z-index: 9999;
 }
+
 
 /* .dropdownMenu::before{
     content: '';

@@ -4,8 +4,22 @@ import HomeHeader from '../../components/HomeHeader/HomeHeader'
 import Notification from '../../components/Notification/Notification'
 import Announcement from '../../components/Announcement/Announcement'
 import './homepage.css'
+import { useNavigate } from 'react-router'
+import { auth } from '../../firebase-config'
 
 export default function Homepage() {
+
+    const navigate = useNavigate();
+
+      const handleLogOut = ()=> {
+        auth.signOut().then(() => {
+                setTimeout(() => navigate("/login"), 0);
+            })
+            .catch((error) => {
+                alert(error.message);
+            });
+    };
+
     return (
         <>
             <div className='homepage-container'>
@@ -54,6 +68,11 @@ export default function Homepage() {
                         <Announcement />
                 </div>
             </div>
+            <button id="logOut" onClick={handleLogOut}
+            className="fixed bottom-6 right-6 px-6 py-2 text-white bg-red-600 hover:bg-red-700 font-semibold rounded-full shadow-md transition-colors duration-200"
+            >
+            Log Out
+            </button>
             </div>
             <div id='button-pets'>
                 <button id='reported-pets'> Your Reported Pets </button>

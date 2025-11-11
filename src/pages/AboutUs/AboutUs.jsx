@@ -1,6 +1,9 @@
+import { useNavigate } from 'react-router';
 import pawPrint from '../../assets/paw-print 4.png'
 
 function AboutUs() {
+    const navigate = useNavigate();
+
     return (
         <div className="flex flex-col gap-4 justify-center items-center w-full h-auto mt-8">
             <div className="w-full sm:w-[90%] md:w-[70%] lg:w-[60%] flex flex-col items-center gap-6 p-8 border border-[#F5F5F5] bg-[rgba(255,255,255,0.21)] rounded-3xl z-100">
@@ -20,7 +23,10 @@ function AboutUs() {
                     <img src={pawPrint} alt="Paw print logo" className="w-16 h-16" />
                 </div>
             </div>
-            <button className="px-10 py-4 text-xl font-bold text-[#A60530] uppercase border border-white bg-[rgba(244,244,244,0.12)] rounded-full shadow-lg cursor-pointer hover:bg-[rgba(204,204,204,0.12)]">Back</button>
+            <button  onClick={()=> navigate(-1)} // goes back to where it was clicked
+            className="px-10 py-4 text-xl font-bold text-[#A60530] uppercase border border-white bg-[rgba(244,244,244,0.12)] rounded-full shadow-lg cursor-pointer hover:bg-[rgba(204,204,204,0.12)]">
+                Back
+            </button>
         </div>
     )
 }

@@ -47,7 +47,7 @@ function ReportFoundPetForm() {
                 </div>
             </div>
             <div className='w-full flex flex-col gap-2 items-center py-4 rounded-3xl'>
-                <button className='w-64 py-4 text-xl font-semibold text-[#FFCC6D] uppercase bg-[#A60530] rounded-full cursor-pointer'>Submit a Lost Pet</button>
+                <button className='w-64 py-4 text-xl font-semibold text-[#FFCC6D] uppercase bg-[#A60530] rounded-full cursor-pointer'>Submit a Found Pet</button>
                 <div className='w-[75%] text-center'>
                     <p className='text-sm italic text'>Note: This form will be saved and automatically be uploaded in the Lost Pets Page. You can also edit or delete  this form in your Reported Lost Pets. </p>
                 </div>
