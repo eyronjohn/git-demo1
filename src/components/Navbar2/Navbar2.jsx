@@ -79,7 +79,7 @@ function Navbar2() {
                         </button> */}
                     </div>
                 ) : (
-                    <Link to="/login" className="text-lg font-semibold text-[#A60530]">
+                    <Link to="/login" className="text-lg font-bold text-[#A60530] cursor-pointer hover:underline">
                         Sign-In
                     </Link>
                 )}
