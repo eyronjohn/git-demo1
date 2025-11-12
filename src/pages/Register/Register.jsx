@@ -190,7 +190,7 @@ function Register() {
 
                     <div>
                         <p>Password</p>
-                        <input type="text" placeholder="Password" className="border rounded-full px-6 py-2 w-full text-sm sm:text-base"
+                        <input type="password" placeholder="Password" className="border rounded-full px-6 py-2 w-full text-sm sm:text-base"
                         onInput={(evt)=>verifyPassword(evt)} value={password}/>
                         <p className="text-[13px] text-red-600 mt-[5px] h-[10px]" id="errPassword"></p>
                     </div>
