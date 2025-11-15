@@ -66,7 +66,7 @@ function Login() {
                     <p className="text-base sm:text-lg text-center">To help all our pet owners in this community, even you, by joining us.</p>
                     <div>
                         {responseMessage && (
-                            <div className="mb-4 px-4 py-2 text-center font-semibold rounded-sm bg-[rgba(255,255,255,0.21)] text-[#A60530]">
+                            <div className="mb-4 px-4 py-2 text-center font-semibold rounded-sm bg-[#A60530] text-[#F2C879] border-2 border-[#ff6a92]">
                                 {responseMessage}
                             </div>
                         )}
