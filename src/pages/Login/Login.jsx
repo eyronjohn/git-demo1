@@ -10,6 +10,7 @@ function Login() {
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
     const [responseMessage, setResponseMessage] = useState("");
+    const [showPassword, setShowPassword] = useState(false);
 
     function loginUser() {
         signInWithEmailAndPassword(auth, email, password).then(() => {
@@ -74,12 +75,42 @@ function Login() {
                         <input type="text" placeholder="Enter your email" value={email} className="border rounded-full px-6 py-2 w-full text-sm sm:text-base"
                             onChange={(e) => setEmail(e.target.value)} />
                     </div>
-                    <div>
+                    {/*  <div>
                         <p>Password</p>
                         <input type="password" placeholder="Enter your password" value={password} className="border rounded-full px-6 py-2 w-full text-sm sm:text-base"
                             onChange={(e) => setPassword(e.target.value)} />
                     </div>
+ */}
+                    <div className="relative">
+                        <p>Password</p>
 
+                        <input
+                            type={showPassword ? "text" : "password"}
+                            placeholder="Enter your password"
+                            value={password}
+                            className="border rounded-full px-6 py-2 w-full text-sm sm:text-base pr-12"
+                            onChange={(e) => setPassword(e.target.value)}
+                        />
+
+                        <button
+                            type="button"
+                            onClick={() => setShowPassword(!showPassword)}
+                            className="absolute right-4 top-[70%] -translate-y-1/2 text-gray-600"
+                        >
+                            {showPassword ? (
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-5 h-5">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8}
+                                        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.477 0 8.268 2.943 9.542 7-1.274 4.057-5.065 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                    <circle cx="12" cy="12" r="3" strokeWidth="1.8"></circle>
+                                </svg>
+                            ) : (
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-5 h-5">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8}
+                                        d="M3 3l18 18M10.58 10.58A3 3 0 0113.4 13.4M7.94 7.94A7.003 7.003 0 0112 7c4.477 0 8.268 2.943 9.542 7a12.297 12.297 0 01-1.26 2.63M6.7 6.7C4.31 8.24 2.75 10.46 2.458 12c.64 2.04 2.05 3.9 4.01 5.2A11.76 11.76 0 0012 19c1.62 0 3.17-.31 4.57-.88" />
+                                </svg>
+                            )}
+                        </button>
+                    </div>
                     <button onClick={loginUser}
                         className="block w-full text-center text-xl sm:text-2xl font-semibold bg-[#A60530] text-[#F2C879] py-2 rounded-full uppercase cursor-pointer">
                         Sign In
