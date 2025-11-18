@@ -162,8 +162,20 @@ function Register() {
                 </div>
                 <div className="flex flex-col gap-4 w-full sm:w-[80%] md:w-[70%]">
                     <p className="text-base sm:text-lg text-center">To help all our pet owners in this community, even you, by joining us. </p>
-                    <div>
+                    {/* <div>
                         <p>Full Name</p>
+                        <input type="text" placeholder="Full Name" className="border rounded-full px-6 py-2 w-full text-sm sm:text-base"
+                        onInput={(evt)=>verifyName(evt)} value={name}/>
+                        <p className="text-[13px] text-red-600 mt-[5px] h-[10px]" id="errName"></p>
+                    </div> */}
+                    <div>
+                        <p>First Name</p>
+                        <input type="text" placeholder="Full Name" className="border rounded-full px-6 py-2 w-full text-sm sm:text-base"
+                        onInput={(evt)=>verifyName(evt)} value={name}/>
+                        <p className="text-[13px] text-red-600 mt-[5px] h-[10px]" id="errName"></p>
+                    </div>
+                    <div>
+                        <p>Last Name</p>
                         <input type="text" placeholder="Full Name" className="border rounded-full px-6 py-2 w-full text-sm sm:text-base"
                         onInput={(evt)=>verifyName(evt)} value={name}/>
                         <p className="text-[13px] text-red-600 mt-[5px] h-[10px]" id="errName"></p>
@@ -190,6 +202,13 @@ function Register() {
 
                     <div>
                         <p>Password</p>
+                        <input type="password" placeholder="Password" className="border rounded-full px-6 py-2 w-full text-sm sm:text-base"
+                        onInput={(evt)=>verifyPassword(evt)} value={password}/>
+                        <p className="text-[13px] text-red-600 mt-[5px] h-[10px]" id="errPassword"></p>
+                    </div>
+
+                    <div>
+                        <p>Confirm Password</p>
                         <input type="password" placeholder="Password" className="border rounded-full px-6 py-2 w-full text-sm sm:text-base"
                         onInput={(evt)=>verifyPassword(evt)} value={password}/>
                         <p className="text-[13px] text-red-600 mt-[5px] h-[10px]" id="errPassword"></p>
