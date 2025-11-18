@@ -214,7 +214,7 @@ function Register() {
 
                     <div className="flex justify-center gap-1">
                         <p>Already have an account?</p>
-                        <Link to="/login" className="cursor-pointer hover:text-[#A60530]">Sign-in</Link>
+                        <Link to="/login" className="underline cursor-pointer hover:text-[#A60530]">Sign-in</Link>
                     </div>
                 </div>
             </div>

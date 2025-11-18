@@ -117,11 +117,11 @@ function Login() {
                     </button>
 
                     <div className="flex justify-center">
-                        <Link to="/forgotpassword" className="cursor-pointer hover:text-[#A60530]">Forgot Password</Link>
+                        <Link to="/forgotpassword" className="underline cursor-pointer hover:text-[#A60530]">Forgot Password</Link>
                     </div>
                     <div className="flex justify-center gap-1">
                         <p>Don't have an account yet?</p>
-                        <Link to="/register" className="cursor-pointer hover:text-[#A60530]">Sign-up</Link>
+                        <Link to="/register" className="underline cursor-pointer hover:text-[#A60530]">Sign-up</Link>
                     </div>
                 </div>
             </div>
